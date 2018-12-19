@@ -18,6 +18,7 @@ const onCreateWebsite = event => {
   $(event.target).trigger('reset')
   api.createWebsite(data)
     .then(ui.createWebsiteSuccess) // if your request was succesful
+    .then(console.log("getting on createwebsite here"))
     .catch(ui.failure) // if your request failed
 }
 const onUpdateWebsite = event => {
