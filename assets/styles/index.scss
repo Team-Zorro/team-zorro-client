@@ -13,15 +13,14 @@
   background-color: skyblue;
 }
 
-
 html {
-	height: 100%;
-	overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
-	margin: 0;
-	width: 100%;
+  margin: 0;
+  width: 100%;
 	height: 100%;
 	overflow: hidden;
 	color: #fff;
@@ -33,7 +32,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 #holidays {
@@ -84,17 +83,18 @@ body {
 		circle farthest-corner,
 		rgba(255, 255, 255, 1) 40%,
 		rgba(255, 255, 255, 0) 100%
-	);
-	background-image: radial-gradient(
-		center,
-		circle farthest-corner,
-		rgba(255, 255, 255, 1) 40%,
-		rgba(255, 255, 255, 0) 100%
-	);
+  );
+  background-image:
+    radial-gradient(
+      center,
+      circle farthest-corner,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 0) 100%
+   );
 }
 
 #snow {
-	position: absolute;
+  position: absolute;
 	width: 100%;
 	height: 100%;
 }
