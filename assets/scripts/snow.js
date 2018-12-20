@@ -101,8 +101,6 @@ const Snowflake = (function () {
   return Snowflake
 }())
 
-window.onload = function () {
-  setTimeout(function () {
-    Snowflake.init(document.getElementById('snow'))
-  }, 500)
+module.exports = {
+  Snowflake
 }
