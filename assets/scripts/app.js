@@ -23,4 +23,6 @@ $(() => {
   $('#show-all-blogs').on('click', blogEvents.onGetAllBlogs)
   $('#create-blog').on('submit', blogEvents.onCreateBlog)
   $('.blog-content').on('click', 'button', blogEvents.onDeleteBlog)
+
+
 })
