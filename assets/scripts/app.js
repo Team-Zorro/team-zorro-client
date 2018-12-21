@@ -3,7 +3,7 @@
 const authEvents = require('./auth/events.js')
 const blogEvents = require('./blogs/events.js')
 const websiteEvents = require('./websites/events.js')
-
+const snowflake = require('/snow.js')
 $(() => {
   // Auth
   $('#sign-up').on('submit', authEvents.onSignUp)
@@ -20,6 +20,10 @@ $(() => {
   // Blogs
   $('.show-blogs-btn').on('click', blogEvents.onGetAllBlogs)
   $('#create-blog').on('submit', blogEvents.onCreateBlog)
+  // $(document).ready(snowflake.Snowflake)
+  snowflake.Snowflake.init(document.getElementById('snow'))
+=======
   $('.blog-content').on('click', '.delete-blog-btn', blogEvents.onDeleteBlog)
   $('.blog-content').on('submit', blogEvents.onUpdateBlog)
+
 })
