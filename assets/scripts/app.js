@@ -8,7 +8,7 @@
 const authEvents = require('./auth/events.js')
 const blogEvents = require('./blogs/events.js')
 const websiteEvents = require('./websites/events.js')
-
+const snowAnimation = require('./snow.js')
 $(() => {
   // Auth
   $('#sign-up').on('submit', authEvents.onSignUp)
@@ -23,4 +23,9 @@ $(() => {
   $('#show-all-blogs').on('click', blogEvents.onGetAllBlogs)
   $('#create-blog').on('submit', blogEvents.onCreateBlog)
   $('.blog-content').on('click', 'button', blogEvents.onDeleteBlog)
+  var skipReady = false
+  if( !skipReady ) {
+    $(document).ready(snowAnimation.init)
+  }
+  $('#clickeme').on('click', $(document).unbind('snowAnimation.init'))
 })

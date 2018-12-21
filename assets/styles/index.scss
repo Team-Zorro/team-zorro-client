@@ -34,7 +34,18 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-
+#team {
+  position: absolute;
+	margin: auto;
+	top: 90%;
+	left: 80%;
+}
+#clickme {
+	position: absolute;
+	margin: auto;
+	top: 70%;
+	left: 42%;
+}
 #holidays {
 	position: absolute;
 	margin: auto;
