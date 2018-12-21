@@ -28,6 +28,19 @@ $(() => {
   // let skipReady= true
 
   // if(skipReady)  {
-  $(document).ready(snowAnimation.init)
+  // $(document).ready(snowAnimation.init)
+  // }
+  // var sound1url = 'https://audio.code.org/win3.mp3';
+  // <button onclick="new Audio(sound1url).play();">Play sound1 individually</button>
+  // $('.clickme').on('click', 'button', blogEvents.playSoundAsync(sound1url))
+  // let x = document.getElementById("myAudio")
+  // $('#play').on('click', playAudio)
+  // function playAudio() {
+  //   console.log('play')
+  //   // x.play();
+  // }
+  //
+  // function pauseAudio() {
+  //   x.pause();
   // }
 })
