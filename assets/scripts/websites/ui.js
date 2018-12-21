@@ -1,9 +1,7 @@
-// const store = require('../store.js')
 const showWebsitesTemplate = require('../templates/website-listing.handlebars')
 
 const createWebsiteSuccess = data => {
-  console.log('Created Website')
-  $('#create-website-message').html('Successfully created a website')
+  $('.create-website-message').html('Successfully created a website')
 }
 
 const deleteWebsiteSuccess = data => {
@@ -11,7 +9,8 @@ const deleteWebsiteSuccess = data => {
 }
 
 const updateWebsiteSuccess = data => {
-
+  $('#update-website-message').html('Successfully updated a website!')
+  $('.modal').modal('hide') // closes modal after success
 }
 
 const getWebsiteSuccess = data => {
@@ -20,7 +19,10 @@ const getWebsiteSuccess = data => {
 }
 
 const failure = data => {
-  $('#message').html('Oops, something went wrong, please try again')
+  $('.website-message').html('Failure deleting website')
+  $('.website-message').css('color', 'red')
+  $('.update-website-message').html('Oops, something went wrong, please try again')
+  $('.update-website-message').css('color', 'red')
 }
 module.exports = {
   getWebsiteSuccess,
