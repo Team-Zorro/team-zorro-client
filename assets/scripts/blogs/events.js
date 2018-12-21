@@ -11,6 +11,9 @@ const onGetAllBlogs = event => {
   $(event.target).trigger('reset')
 }
 
+// function playSoundAsync(url){
+//     new Audio(url).play();
+// }
 const onCreateBlog = event => {
   event.preventDefault()
   const data = getFormFields(event.target)
@@ -44,4 +47,5 @@ module.exports = {
   onCreateBlog,
   onUpdateBlog,
   onDeleteBlog
+  // playSoundAsync
 }
