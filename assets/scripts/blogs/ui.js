@@ -1,13 +1,7 @@
-// const store = require('../store.js')
 const showBlogsTemplate = require('../templates/blog-listing.handlebars')
 
 const createBlogSuccess = data => {
-  console.log('Created Blog')
-  $('#create-blog-message').html('Successfully created a blog')
-}
-
-const createBlogFailure = data => {
-  console.log('Failed to create')
+  $('.create-blog-message').html('Successfully created a blog')
 }
 
 const deleteBlogSuccess = data => {
@@ -15,7 +9,8 @@ const deleteBlogSuccess = data => {
 }
 
 const updateBlogSuccess = data => {
-
+  $('#update-blog-message').html('Successfully updated a blog!')
+  $('.modal').modal('hide') // closes modal after success
 }
 
 const getBlogSuccess = data => {
@@ -24,13 +19,14 @@ const getBlogSuccess = data => {
 }
 
 const failure = data => {
-  $('#blog-message').html('Oops, something went wrong, please try again')
-  $('create-blog-message').html('Failure creating blog')
+  $('.create-blog-message').html('Failure creating blog')
+  $('.create-blog-message').css('color', 'red')
+  $('.blog-message').html('Failure deleting blog')
+  $('.blog-message').css('color', 'red')
 }
 module.exports = {
   getBlogSuccess,
   createBlogSuccess,
-  createBlogFailure,
   updateBlogSuccess,
   deleteBlogSuccess,
   failure
