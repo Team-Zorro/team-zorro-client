@@ -90,8 +90,8 @@ min-height:100%;
   position: absolute;
   background-image:
     url(http://gdurl.com/dIoP),
-    url(http://gdurl.com/G5Vp),
-    url(http://gdurl.com/m9Yz);
+    url(http://gdurl.com/G5Vp);
+
   z-index: 1;
   pointer-events: none;
   -moz-animation: snow 10s linear infinite;
@@ -253,113 +253,17 @@ $textColor: #ffffff;
   -moz-animation-timing-function: ease-in-out;
   -ms-animation-timing-function: ease-in-out;
 }
-// .flake{
-// 	position: absolute;
-// 	border-radius: 50%;
-	// @include transform(translateY(0) rotateX(0) rotateY(0));
-	// @include background-image(
-		// linear-gradient(180deg,
-		// 	rgba(255,255,255,0) 30%,
-		// 	$snowColor 50%,
-		// 	$snowColor 60%,
-		// 	rgba(255,255,255,0) 60%),
-		// linear-gradient(90deg,
-		// 	rgba(255,255,255,0) 30%,
-		// 	$snowColor 50%,
-		// 	$snowColor 60%,
-		// 	rgba(255,255,255,0) 60%),
-		// linear-gradient(45deg,
-		// 	rgba(255,255,255,0) 33%,
-		// 	$snowColor 53%,
-		// 	$snowColor 57%,
-		// 	rgba(255,255,255,0) 65%),
-		// linear-gradient(135deg,
-		// 	rgba(255,255,255,0) 33%,
-		// 	$snowColor 53%,
-		// 	$snowColor 57%,
-		// 	rgba(255,255,255,0) 65%)
-	// );
-// }
-
-// @for $i from 1 through $flakes{
-// 	$flakeWidth: 5 + random(15); // Flake size
-// 	$flakeHeight: $flakeWidth;
-// 	$flakeVertical: -700 + random(700);
-// 	$flakeHorizontal: random(100);
-// 	$flakeBlur: 2 + random(2);
-// 	$flakeDelay: 15 + random(55); // Flake speed
-//
-// 	.flake:nth-child(#{$i}){
-// 		width: $flakeWidth + px;
-// 		height: $flakeHeight + px;
-// 		top: $flakeVertical + px;
-// 		left: #{$flakeHorizontal + "%"};
-// 		opacity: (50 + random(50)) * 0.01;
-// 		filter: blur($flakeBlur + px );
-// 		@include animation(#{$flakeDelay + s} flakes linear infinite);
-// 	}
-// }
-//
-// @keyframes flakes {
-// 	100%{
-// 		// @include transform(translateY(1000px) rotateX(10 + random(40) + deg) rotateY(10 + random(40) + deg));
-// 		// opacity: 0;
-// 	}
-// }
-
-//
-// .snowflake {
-// 	position: absolute;
-// 	display: block;
-// 	position: absolute;
-// 	-webkit-border-radius: 50%;
-// 	-moz-border-radius: 50%;
-// 	border-radius: 50%;
-// 	-webkit-transform: translateZ(0);
-// 	-moz-transform: translateZ(0);
-// 	-ms-transform: translateZ(0);
-// 	-o-transform: translateZ(0);
-// 	transform: translateZ(0);
-// 	-webkit-user-select: none;
-// 	-moz-user-select: none;
-// 	user-select: none;
-// 	background-image: -webkit-radial-gradient(
-// 		center,
-// 		circle farthest-corner,
-// 		rgba(255, 255, 255, 1) 40%,
-// 		rgba(255, 255, 255, 0) 100%
-// 	);
-// 	background-image: -moz-radial-gradient(
-// 		center,
-// 		circle farthest-corner,
-// 		rgba(255, 255, 255, 1) 40%,
-// 		rgba(255, 255, 255, 0) 100%
-// 	);
-// 	background-image: -ms-radial-gradient(
-// 		center,
-// 		circle farthest-corner,
-// 		rgba(255, 255, 255, 1) 40%,
-// 		rgba(255, 255, 255, 0) 100%
-//   );
-//   background-image:
-//     radial-gradient(
-//       center,
-//       circle farthest-corner,
-//       rgba(255, 255, 255, 1) 40%,
-//       rgba(255, 255, 255, 0) 100%
-//    );
-// }
 
 #snow {
   position: absolute;
 	width: 100%;
 	height: 100%;
-=======
+}
+
 .shown-blog {
   background-color: #3198ff;
 }
 
 .shown-website {
   background-color: #41b534;
-
 }
